@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landing.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation" id="nav">
+            <div class="logo">
+                <label id="logotext">Lorem<br> Ispum</label> 
+                <span id="cross">&times</span>
+            </div>
+            <div class="buttons">
+                <ul>
+                    <li id="about"><a><span>About</span></a></li>
+                    <li id="service"><a>Service</a></li>
+                    <li id="cuisine"><a>Cuisine</a></li>
+                    <li id="gallery"><a>Gallery</a></li>
+                    <li id="contact"><a>Contact</a></li>
+                    <li id="book"><a>Book</a></li>
+                </ul>
+                <button id="cart">
+                    Cart
+                </button>
+            </div>
+ 
+        </div>
+        <div class="mainbox">
+            <div class="phonenav">
+                <div id="menuburger">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path d="M2 5.995c0-.55.446-.995.995-.995h8.01a.995.995 0 0 1 0 1.99h-8.01A.995.995 0 0 1 2 5.995z" fill="#fc4949"/><path d="M2 12c0-.55.446-.995.995-.995h18.01a.995.995 0 1 1 0 1.99H2.995A.995.995 0 0 1 2 12z" fill="#fc4949"/>
+                        <path d="M2.995 17.01a.995.995 0 0 0 0 1.99h12.01a.995.995 0 0 0 0-1.99H2.995z" fill="#fc4949"/>
+                     </g>
+                    </svg>
+                </div>
+                <div class="title">
+                    <label id="title_words">Lorem</label>
+                </div>
+                <div class="ordercart">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g transform="translate(24 0) scale(-1 1)">
+                        <path d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z" fill="#fc4949"/>
+                        <circle cx="10.5" cy="19.5" r="1.5" fill="#fc4949"/>
+                        <circle cx="17.5" cy="19.5" r="1.5" fill="#fc4949"/>
+                      </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="heading">
+                <div class="mainHeading">
+                    <div id="text">
+                        What are you having for Lunch ?
+                    </div>
+                </div>
+                <div class="subtext">
+                   <p> 
+                       Lorem ipsum dolor sit amet.
+                       Qui impedit minus sit illum
+                       aliquid galisum architecto
+                       aut consectetur vitae et 
+                    </p>
+                    <div id="line">
+
+                    </div>
+                </div>
+            </div>
+            <div class="cardbox">
+                <div class="boxforslide">
+                    <div class="card">
+                        <div class="foodimage">
+                            <img src="img/istockphoto-599704698-612x612.jpg">
+                        </div>
+                        <div class="foodname">
+                            <span>Mexican Taco</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="foodimage">
+                            <img src="img/hakka-noodles-recipe.jpg">
+                        </div>
+                        <div class="foodname">
+                            <span>Noodles</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="foodimage">
+                            <img src="img/2019_6image_14_21_266147518farmhouse-pizza.jpg">
+                        </div>
+                        <div class="foodname">
+                            <span>Farmhouse Pizza</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="foodimage">
+                            <img src="img/download.jpg">
+                        </div>
+                        <div class="foodname">
+                            <span>Chicken Burger </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="foodimage">
+                            <img src="img/images.jpg">
+                        </div>
+                        <div class="foodname">
+                            <span>Loaded Nanchos</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="foodimage">
+                            <img src="img/istockphoto-599704698-612x612.jpg">
+                        </div>
+                        <div class="foodname">
+                            <span>Mexican Taco</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space">
+                <p> 
+                    Lorem ipsum dolor sit amet.
+                    Qui impedit minus sit illum
+                    aliquid galisum architecto
+                    aut consectetur vitae et 
+                 </p>
+                 <div id="line2">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+           
+            document.getElementById("menuburger").addEventListener("click",function(evt)
+            {
+                document.getElementById("nav").style.transform = "translateX(0vw)";
+            });
+
+            document.getElementById("cross").addEventListener("click",function(evt)
+            {
+                document.getElementById("nav").style.transform = "translateX(-50vw)";
+            });
+</script>
+
+</html>
